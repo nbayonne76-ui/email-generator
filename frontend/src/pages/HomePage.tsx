@@ -1,5 +1,6 @@
 import { EnvelopeIcon } from '@heroicons/react/24/outline'
 import { useQuery } from '@tanstack/react-query'
+import { Link } from 'react-router-dom'
 import { api } from '../api/client'
 
 type Health = { status: string }
@@ -25,6 +26,9 @@ export default function HomePage() {
             <span className="text-green-600 font-medium">{data?.status}</span>
           )}
         </p>
+        <Link to="/templates" className="inline-block text-indigo-600 font-medium hover:underline">
+          Voir les templates →
+        </Link>
       </div>
     </main>
   )
