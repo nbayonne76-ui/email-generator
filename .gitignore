@@ -18,5 +18,8 @@ dist/
 *.log
 .DS_Store
 .vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
 .idea/
+.ruff_cache/
